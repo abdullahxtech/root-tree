@@ -30,5 +30,5 @@ It allows users to create a single sharable page that hosts all their important 
 
 ## 📸 Screenshots
 
-> Add your screenshots here after deployment
-
+> ![Home Page](./public/screenshot1.png)
+> ![Generate Page](./public/screenshot2.png)
