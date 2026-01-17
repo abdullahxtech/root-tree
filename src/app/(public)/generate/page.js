@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { ToastContainer, toast } from 'react-toastify';
 
+export const dynamic = "force-dynamic";
+
 
 const GeneratePage = () => {
   const searchParams = useSearchParams();
