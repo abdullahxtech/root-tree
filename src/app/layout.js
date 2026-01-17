@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -30,7 +31,9 @@ export default function RootLayout({ children }) {
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          {children}
+          <Suspense fallback={<div className='text-3xl min-h-screen text-black justify-center items-center'>Loading...</div>}>
+            {children}
+          </Suspense>
         </body>
       </html>
     </ClerkProvider>
